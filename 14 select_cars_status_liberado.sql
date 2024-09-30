@@ -1,0 +1,7 @@
+-- SQLite
+SELECT NAME, YEAR, COLOR, KM, BRAND_NAME, MODEL_NAME 
+FROM CARS c 
+JOIN CAR_BRAND b ON c.id = b.id 
+JOIN CAR_MODEL m ON c.id = m.id
+WHERE STATUS = 'Liberado';
+
